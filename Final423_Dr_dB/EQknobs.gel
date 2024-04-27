@@ -1,0 +1,48 @@
+
+menuitem "EQ"
+
+slider bassKnob(1, 5, 1, 5, bk)
+{
+    eqB = bk;
+}
+
+slider midKnob(1, 5 ,1, 5, mk)
+{
+    eqM = mk;
+}
+
+slider trebKnob(1, 5 ,1, 5, tk)
+{
+    eqT = tk;
+}
+
+
+slider enable(0, 1 ,1, 1, e)
+{
+    bypassDist = e;
+}
+
+slider gain(1, 10 ,1, 1, g)
+{
+    preampGain = g;
+}
+
+slider verb(0, 14 ,1, 1, v)
+{
+    verbIndx = v;
+}
+
+slider vol(0, 10 ,1, 1, vol)
+{
+    ampVolume = vol;
+}
+
+slider phaseEn(0, 1 ,1, 1, pe)
+{
+    phaseEn = pe;
+}
+
+slider phaseFreq(5, 10 ,1, 1, pf)
+{
+    phaseFreq = pf;
+}

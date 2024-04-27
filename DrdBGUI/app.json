@@ -1,0 +1,61 @@
+{"widgetBindings": [
+    {
+        "propertyName": "Bass",
+        "widgetId": "prop",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "phaseEn",
+        "widgetId": "widget_18495",
+        "options": {"dataType": "Double"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "phaseFreq",
+        "widgetId": "widget_22063",
+        "options": {"dataType": "Double"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "ampVolume",
+        "widgetId": "widget_15976",
+        "options": {"dataType": "Double"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "bypassDist",
+        "widgetId": "widget_30430",
+        "options": {"dataType": "Double"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "preampGain",
+        "widgetId": "widget_14807",
+        "options": {"dataType": "Double"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "eqB",
+        "widgetId": "widget_33555",
+        "options": {"dataType": "Double"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "eqT",
+        "widgetId": "widget_26802",
+        "options": {"dataType": "Double"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "verbIndx",
+        "widgetId": "widget_10472",
+        "options": {"dataType": "Double"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "eqM",
+        "widgetId": "widget_24746",
+        "options": {"dataType": "Double"}
+    }
+]}

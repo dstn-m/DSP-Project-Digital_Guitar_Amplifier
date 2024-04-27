@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<!-- Do not remove or modify this line --><head data-gc-version="1.5.201501051800">
+<meta charset="utf-8"/>
+<title>Untitled</title>
+<script type="text/javascript" src="lib/davinci.dojo_1_8/WebContent/dojo/dojo/dojo.js" data-dojo-config="'parseOnLoad':true,'async':true,'packages':[{'name':'gc','location':'../../../../davinci.gc_1_5/WebContent/gc'},{'name':'maqetta','location':'../../../../davinci.gc_1_5/WebContent/maqetta'}]"></script>
+<script type="text/javascript">
+require([
+  "dijit/dijit",
+  "dojo/parser",
+  "maqetta/space",
+  "maqetta/AppStates",
+  "dijit/form/VerticalSlider",
+  "dijit/form/VerticalRule",
+  "dijit/form/VerticalRuleLabels",
+  "gc/dijit/libs/steelseries/tween.amd.min",
+  "gc/dijit/libs/steelseries/steelseries.amd.min",
+  "gc/dijit/DigitalGauge",
+  "gc/dijit/Dial",
+  "gc/dijit/HorizontalSlider",
+  "gc/dijit/HorizontalRule",
+  "gc/dijit/HorizontalRuleLabels",
+  "gc/dijit/ToggleButton",
+  "gc/dijit/Button",
+  "dijit/form/TextBox",
+  "dijit/form/Textarea",
+  "gc/dijit/LineGraph"
+]);
+</script>
+<style>@import "lib/davinci.dojo_1_8/WebContent/maqetta/themes/claro/document.css";@import "lib/davinci.dojo_1_8/WebContent/maqetta/themes/claro/claro.css";@import "lib/davinci.dojo_1_8/WebContent/dojo/dojo/resources/dojo.css";@import "lib/davinci.gc_1_5/WebContent/gc/dijit/libs/css/widgets.css";@import "lib/davinci.gc_1_5/WebContent/gc/dijit/libs/jqplot/css/jquery.jqplot.min.css";@import "app.css";
+</style>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="lib/davinci.gc_1_5/WebContent/gc/backplane/guiComposer.js"></script>
+<script type="text/javascript" src="lib/davinci.gc_1_5/WebContent/gc/dijit/libs/jqplot/jqplotGraphFull.min.js"></script>
+</head>
+<body data-maq-flow-layout="false" data-maq-comptype="desktop" class="claro" data-maq-ws="collapse" id="myapp" data-maq-appstates="{}">
+ <canvas id="widget_14807" data-dojo-type="gc.dijit.Dial" size="159" minValue="1" maxValue="10" setValueOnDrag="false" value="1" labelNumberFormat="standard" fractionalScaleDecimals="1" frameDesign="brass" dialDesign="darkGray" visible="true" style="position: absolute; z-index: 900; width: 159px; height: 159px; left: 149px; top: 331px;" labels="1,2,3,4,5,6,7,8,9,10"></canvas>
+ <canvas id="widget_10472" data-dojo-type="gc.dijit.Dial" size="159" minValue="0" maxValue="14" setValueOnDrag="false" value="0" labelNumberFormat="standard" fractionalScaleDecimals="1" frameDesign="brass" dialDesign="darkGray" visible="true" style="width: 159px; height: 159px; position: absolute; z-index: 900; left: 807px; top: 344px;" labels="0,1,2,3,4,5,6,7,8,9,10,11,12,13"></canvas>
+ <canvas id="widget_33555" data-dojo-type="gc.dijit.Dial" size="159" minValue="1" maxValue="5" setValueOnDrag="false" value="1" labels="1,2,3,4,5" labelNumberFormat="standard" fractionalScaleDecimals="1" frameDesign="brass" dialDesign="darkGray" visible="true" style="width: 159px; height: 159px; position: absolute; z-index: 900; left: 41px; top: 70px;"></canvas>
+ <div id="widget_30430" data-dojo-type="gc.dijit.HorizontalSlider" value="0" intermediateChanges="false" maximum="1" discreteValues="2" visible="true" style="width: 200px; background-size: auto; color: white; position: absolute; background-color: transparent; opacity: 1.0; z-index: 900; left: 324px; top: 629px;">
+   <div id="widget_27354" data-dojo-type="gc.dijit.HorizontalRule" container="bottomDecoration" style="height: 5px;"></div>
+   <ol id="widget_21587" data-dojo-type="gc.dijit.HorizontalRuleLabels" count="2" labels="OFF,ON" container="bottomDecoration" style="height: 20px; background-color: transparent; color: white;"></ol>
+ </div>
+ <textarea type="text" data-dojo-type="dijit.form.Textarea" intermediateChanges="false" rows="3" trim="false" uppercase="false" lowercase="false" propercase="false" style="border: none; position: absolute; z-index: 900; height: auto; font-family: monospace; color: white; background-color: transparent; text-align: center; font-weight: bold; font-size: 22pt; width: 107px; left: 832px; top: 522px;" value="REVERB">
+   REVERB</textarea>
+ <textarea type="text" data-dojo-type="dijit.form.Textarea" intermediateChanges="false" rows="3" trim="false" uppercase="false" lowercase="false" propercase="false" style="border: none; height: auto; font-family: monospace; color: white; background-color: transparent; text-align: center; font-weight: bold; font-size: 22pt; width: 107px; position: absolute; z-index: 900; left: 407px; top: 509px;" value="VOLUME">
+   REVERB</textarea>
+ <textarea type="text" data-dojo-type="dijit.form.Textarea" intermediateChanges="false" rows="3" trim="false" uppercase="false" lowercase="false" propercase="false" style="border: none; height: auto; font-family: monospace; color: white; background-color: transparent; text-align: center; font-weight: bold; font-size: 22pt; position: absolute; z-index: 900; width: 188px; left: 83px; top: 619px;" value="DISTORTION ON/OFF">
+   DISTORTION ON/OF</textarea>
+ <textarea type="text" data-dojo-type="dijit.form.Textarea" intermediateChanges="false" rows="3" trim="false" uppercase="false" lowercase="false" propercase="false" style="border: none; height: auto; font-family: monospace; color: white; background-color: transparent; text-align: center; font-weight: bold; font-size: 22pt; width: 107px; position: absolute; z-index: 900; left: 525px; top: 248px;" value="TREBLE">
+   REVERB</textarea>
+ <textarea type="text" data-dojo-type="dijit.form.Textarea" intermediateChanges="false" rows="3" trim="false" uppercase="false" lowercase="false" propercase="false" style="border: none; height: auto; font-family: monospace; color: white; background-color: transparent; text-align: center; font-weight: bold; font-size: 22pt; width: 107px; position: absolute; z-index: 900; left: 300px; top: 238px;" value="MID">
+   REVERB</textarea>
+ <textarea type="text" data-dojo-type="dijit.form.Textarea" intermediateChanges="false" rows="3" trim="false" uppercase="false" lowercase="false" propercase="false" style="border: none; height: auto; font-family: monospace; color: white; background-color: transparent; text-align: center; font-weight: bold; font-size: 22pt; position: absolute; z-index: 900; width: 187px; left: 134px; top: 509px;" value="DISTORTION">
+   DISTORTION</textarea>
+ <textarea type="text" data-dojo-type="dijit.form.Textarea" intermediateChanges="false" rows="3" trim="false" uppercase="false" lowercase="false" propercase="false" style="border: none; height: auto; font-family: monospace; color: white; background-color: transparent; text-align: center; font-weight: bold; font-size: 22pt; width: 107px; position: absolute; z-index: 900; left: 67px; top: 242px;" value="BASS">
+   REVERB</textarea>
+ <canvas id="widget_15976" data-dojo-type="gc.dijit.Dial" size="159" minValue="0" maxValue="10" setValueOnDrag="false" value="0" labelNumberFormat="standard" fractionalScaleDecimals="1" frameDesign="brass" dialDesign="darkGray" visible="true" style="width: 159px; height: 159px; position: absolute; z-index: 900; left: 377px; top: 331px;" labels="0,1,2,3,4,5,6,7,8,9,10"></canvas>
+ <canvas id="widget_24746" data-dojo-type="gc.dijit.Dial" size="159" minValue="1" maxValue="5" setValueOnDrag="false" value="1" labels="1,2,3,4,5" labelNumberFormat="standard" fractionalScaleDecimals="1" frameDesign="brass" dialDesign="darkGray" visible="true" style="width: 159px; height: 159px; position: absolute; z-index: 900; left: 272px; top: 70px;"></canvas>
+ <canvas id="widget_26802" data-dojo-type="gc.dijit.Dial" size="159" minValue="1" maxValue="5" setValueOnDrag="false" value="1" labels="1,2,3,4,5" labelNumberFormat="standard" fractionalScaleDecimals="1" frameDesign="brass" dialDesign="darkGray" visible="true" style="width: 159px; height: 159px; position: absolute; z-index: 900; left: 499px; top: 70px;"></canvas>
+ <canvas id="widget_22063" data-dojo-type="gc.dijit.Dial" size="159" minValue="5" maxValue="10" setValueOnDrag="false" value="5" labels="5,6,7,8,9,10" labelNumberFormat="standard" fractionalScaleDecimals="1" frameDesign="brass" dialDesign="darkGray" visible="true" style="width: 159px; height: 159px; position: absolute; z-index: 900; left: 807px; top: 68px;"></canvas>
+ <textarea type="text" data-dojo-type="dijit.form.Textarea" intermediateChanges="false" rows="3" trim="false" uppercase="false" lowercase="false" propercase="false" style="border: none; height: auto; font-family: monospace; color: white; background-color: transparent; text-align: center; font-weight: bold; font-size: 22pt; width: 107px; position: absolute; z-index: 900; left: 832px; top: 248px;" value="Phaser Speed">
+   Phaser Speed</textarea>
+ <div id="widget_18495" data-dojo-type="gc.dijit.HorizontalSlider" value="0" intermediateChanges="false" maximum="1" discreteValues="2" visible="true" style="width: 200px; background-size: auto; color: white; background-color: transparent; opacity: 1.0; position: absolute; z-index: 900; left: 762px; top: 623.5px;">
+   <div id="widget_20539" data-dojo-type="gc.dijit.HorizontalRule" container="bottomDecoration" style="height: 5px;"></div>
+   <ol id="widget_32914" data-dojo-type="gc.dijit.HorizontalRuleLabels" count="2" labels="OFF,ON" container="bottomDecoration" style="height: 20px; background-color: transparent; color: white;"></ol>
+ </div>
+ <textarea type="text" data-dojo-type="dijit.form.Textarea" intermediateChanges="false" rows="3" trim="false" uppercase="false" lowercase="false" propercase="false" style="border: none; height: auto; font-family: monospace; color: white; background-color: transparent; text-align: center; font-weight: bold; font-size: 22pt; width: 187px; position: absolute; z-index: 900; left: 556px; top: 611px;" value="PHASER ON/OFF">
+ PHASER ON/OFF</textarea>
+ <img style="background-size: 100%; width: 1080px; height: 720px; background-image: url('HD-wallpaper-brown-wood-texture-walnut-wood-texture-brown-wooden-background-textures-of-natural-materials.jpg'); left: 0px; top: 0px; position: static;"></img>
+</body>
+</html>
