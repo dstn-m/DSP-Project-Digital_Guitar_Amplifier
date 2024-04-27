@@ -5,6 +5,7 @@ Designed and implemented code to simulate a generic guitar amplifier on the OMAP
 * distortion, 
 * EQ, modulation effects,
 * master volume. 
+
 A technical report is provided for more details on the design. Basic setup code provided by Welch, Write, &amp; Morrow. 
 Software run on the OMAP-L138 originally developed in Code Composer Studio (CCS) V12, ported over to CCS V6 to utilize GUI Composer. The GUI for this project was designed by my lab partner, Lucas V. 
 
